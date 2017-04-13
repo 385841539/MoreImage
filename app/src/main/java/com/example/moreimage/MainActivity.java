@@ -175,7 +175,7 @@ public class MainActivity extends Activity {
 
             Log.e("setsize", "getContentProvider: " + strings);
             try {
-                Bitmap bitmap = convertToBitmap(strings);
+                Bitmap bitmap = convertToBitmap(strings,300,300);
 
                 MyBitmap myBitmap = new MyBitmap(strings, bitmap);
                 lists.add(myBitmap);
@@ -235,12 +235,26 @@ public class MainActivity extends Activity {
         return timeint;
     }
 
-    public Bitmap convertToBitmap(String path) {
+    public Bitmap convertToBitmap(String filePath, int destWidth, int destHeight) {
 
 
-        File file = new File(path);
-        Bitmap bm = BitmapFactory.decodeFile(path);
-        return bm;
+
+        //第一采样
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(filePath, options);
+        int outWidth = options.outWidth;
+        int outHeight = options.outHeight;
+        int sampleSize = 1;
+        while ((outWidth / sampleSize > destWidth) || (outHeight / sampleSize > destHeight)) {
+
+            sampleSize *= 2;
+        }
+        //第二次采样
+        options.inJustDecodeBounds = false;
+        options.inSampleSize = sampleSize;
+        options.inPreferredConfig = Bitmap.Config.RGB_565;
+        return BitmapFactory.decodeFile(filePath, options);
 
     }
 
