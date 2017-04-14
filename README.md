@@ -5,7 +5,7 @@
 # 效果图：不是很清楚，可以下下来安装
 
 
-<center>
+</center>
 ![效果图](https://github.com/385841539/MoreImage/blob/master/app/src/main/res/mipmap-xxhdpi/lastimage0310269.gif)
 
  
