@@ -1,15 +1,11 @@
 # MoreImage
 
  
+ <font color=##DC143C size=4 face="黑体">*本篇文章已授权微信公众号 hongyangAndroid（鸿洋）独家发布</font>
 
 
 ![效果图](https://github.com/385841539/MoreImage/blob/master/app/src/main/res/mipmap-xxhdpi/lastimage0310269.gif)
 
-
-
-
-
- <font color=##DC143C size=4 face="黑体">*本篇文章已授权微信公众号 hongyangAndroid（鸿洋）独家发布</font>
 
 **今日，产品经理又疯了，搞这么一个功能，也是没事做了，算了，先来说一下具体功能吧，简化来就是：**
 ###**在一个界面上，点击某个按钮，打开相机，拍很多张照片，返回以后，把刚才所拍的照片显示出来，照片数小于等于7。** 
@@ -134,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
 开机运行啦，测试机是华为小米的6.0系统，看一下效果，
 嗯，不错，打开相机是这样的：
 
-<center>
+
 ![这里写图片描述](http://img.blog.csdn.net/20170414115306060?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaWFtZGluZ3J1aWhhaGE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
@@ -146,7 +142,6 @@ public class MainActivity extends AppCompatActivity {
 
 ```
 
-<center>
 ![这里写图片描述](http://img.blog.csdn.net/20170413164518008?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaWFtZGluZ3J1aWhhaGE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
@@ -449,9 +444,8 @@ OK，run一下，打个log:
 - 如果用户打开手机刷刷刷，每一秒牌好几张，那一秒里面拍的照片 这里的代码这个是得不到的，因为这种情况到秒的时间都是一样的，多出来了毫秒加在了秒后面，如果想得到，请自己在塞选那里自行改善，不改善的话，就提醒用户慢点拍，因为一秒钟拍那么多，肯定是一个视角拍出来的，何必呢
 - 真的要整合到项目里的话，这里还有个漏洞，比如拍完照片，用户，按Home键，然后改变时间，然后进我们的应用再按返回，应该不会有人这么做的，这里可以提醒一下用户，请拍完照片直接按返回，避免失败。
 
-以上是自己的踩得坑，测试手机有限，问题肯定是有的，[代码已经总结、全部上传github,点击查看](https://github.com/385841539/MoreImage) 。
-
-
+以上是自己的踩得坑，测试手机有限，问题肯定是有的，欢迎多多反馈！
+ 
 
 
 ###**经验总结：**
