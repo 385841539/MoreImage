@@ -1,7 +1,5 @@
-# MoreImage
+# MoreImage   效果图 :
  
-## 效果图 :
-
 ![效果图](https://github.com/385841539/MoreImage/blob/master/app/src/main/res/mipmap-xxhdpi/lastimage0310269.gif)
 
 
