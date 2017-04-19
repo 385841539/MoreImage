@@ -1,8 +1,5 @@
 # MoreImage
 
- 
- <font color=##DC143C size=4 face="黑体">*本篇文章已授权微信公众号 hongyangAndroid（鸿洋）独家发布</font>
-
 
 ![效果图](https://github.com/385841539/MoreImage/blob/master/app/src/main/res/mipmap-xxhdpi/lastimage0310269.gif)
 
