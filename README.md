@@ -1,7 +1,6 @@
 # MoreImage
 
  
-<center>
 
 
 ![效果图](https://github.com/385841539/MoreImage/blob/master/app/src/main/res/mipmap-xxhdpi/lastimage0310269.gif)
@@ -10,11 +9,19 @@
 
 
 
+ <font color=##DC143C size=4 face="黑体">*本篇文章已授权微信公众号 hongyangAndroid（鸿洋）独家发布</font>
+
 **今日，产品经理又疯了，搞这么一个功能，也是没事做了，算了，先来说一下具体功能吧，简化来就是：**
 ###**在一个界面上，点击某个按钮，打开相机，拍很多张照片，返回以后，把刚才所拍的照片显示出来，照片数小于等于7。** 
 
 各位看官，别着急，是不是觉得特简单，不就Intent跳转打开相机，拍几张照片，在**onActivityResult**方法里面拿到刚才拍的照片，显示出来不就可以了么？嗯，是的，是这么简单。我来帮您写过程。
 
+
+![这里写图片描述](http://img.blog.csdn.net/20170417100804053?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaWFtZGluZ3J1aWhhaGE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+----------
+
+----------
 
 
 ###**一、第一个想法实现功能**
@@ -139,6 +146,8 @@ public class MainActivity extends AppCompatActivity {
 
 ```
 
+<center>
+![这里写图片描述](http://img.blog.csdn.net/20170413164518008?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaWFtZGluZ3J1aWhhaGE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
 **那好，咱们看截图：**
@@ -153,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+![这里写图片描述](http://img.blog.csdn.net/20170413164834856?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaWFtZGluZ3J1aWhhaGE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 嗯，想想,可以的，您先想，应该有其他方法，我也想到了一个方法，您看这样可以么？前方高能，同志请带好安全帽：
 
@@ -185,6 +195,7 @@ E/setsize: getContentProvider: /storage/emulated/0/DCIM/Camera/IMG_20170413_1656
 不要问是什么 ，从哪里来的，您就看熟不熟悉？
 
 
+![这里写图片描述](http://img.blog.csdn.net/20170413165934049?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaWFtZGluZ3J1aWhhaGE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 对了，是在哪里见过，在哪里呢？打开你手机拍出来的照片，打开照片信息，看一下路径。对嘛，我就说在快播，额不 ， 手机照片上见过嘛。
 
@@ -297,7 +308,7 @@ E/setsize: getContentProvider: /storage/emulated/0/DCIM/Camera/IMG_20170413_1656
 
 OK，run一下，打个log:
 
-<center>
+
 ![这里写图片描述](http://img.blog.csdn.net/20170413181024204?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaWFtZGluZ3J1aWhhaGE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
@@ -327,7 +338,7 @@ OK，run一下，打个log:
 
 再打个log看一下：
 
-<center>
+
 ![这里写图片描述](http://img.blog.csdn.net/20170413181728183?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaWFtZGluZ3J1aWhhaGE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
@@ -427,7 +438,7 @@ OK，run一下，打个log:
 。。。。。
 
 搞定了，看下效果：
-<center>
+
 ![这里写图片描述](http://img.blog.csdn.net/20170413190533799?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvaWFtZGluZ3J1aWhhaGE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
